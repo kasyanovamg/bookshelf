@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html  lang="ru">
+<head>
+	<title>Книжная полка</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1>Книжная полка</h1>
+	<button id="add_book">Добавить книгу</button>
+	<div id="edition_field">
+		<h3>Редактирование книги</h3>
+		<form>
+			<div>
+				<label for="name">Наименование</label>
+				<input type="text" id="book_name" placeholder="Название книги">
+			</div>
+			<div>
+				<label for="name">Автор</label>
+				<input type="text" id="book_name" placeholder="Автор книги">
+			</div>
+			<div>
+				<label for="name">Год выпуска</label>
+				<input type="text" id="book_name" placeholder="Год">
+			</div>
+			<div>
+				<label for="name">Изображение</label>
+				<input type="text" id="book_name" placeholder="Вставьте URL">
+			</div>
+			<button id="save_book">Сохранить</button>
+			<button id="cancel_book">Отменить</button>
+		</form>
+	</div>
+	<div class="table_of_books">
+		<table>
+			<tr>
+				<td class="book_image"></td>
+				<td>
+					JavaScript and Jquery
+					<br>
+					Author
+					<br>
+					Book
+				</td>
+				<td>
+					<button id="edit">Редактировать</button>
+					<br>
+					<button id="delete">Удалить</button>
+				</td>					
+			</tr>
+
+			<tr>
+				<td class="book_image"></td>
+				<td>
+					JavaScript and Jquery
+					<br>
+					Author
+					<br>
+					Book
+				</td>
+				<td>
+					<button id="edit">Редактировать</button>
+					<br>
+					<button id="delete">Удалить</button>
+				</td>					
+			</tr>
+
+		</table>
+	</div>
+
+
+</body>
+</html>

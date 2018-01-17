@@ -1,0 +1,16 @@
+#edition_field {
+	display: none;
+	border: solid 1px  lightgray;
+	margin: 20px;
+	padding: 20px;
+}
+
+
+.book_image {
+	background: lightgray;
+	width: 100px;
+	height: 150px;
+}
+table {
+	border: solid 1px  lightgray;
+}
