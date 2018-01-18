@@ -1,16 +1,101 @@
+
+
+/* edit css for all browsers! check in validator */
+* {
+	font-family: Arial, sans-serif;
+}
+h1 {
+	font-size: 50px;
+}
+body {
+	padding: 20px;
+}
 #edition_field {
 	display: none;
 	border: solid 1px  lightgray;
 	margin: 20px;
 	padding: 20px;
 }
+#edition_field > form > p {
+	font-size: 14px;
+	font-weight: bold;
+}
+#edition_field > form > p > input {
+	width: 90%;
+	margin-top: 6px;
+	padding: 6px;
+}
+header {
+	margin: 50px 0 0 20px;
+}
 
-
-.book_image {
+.image {
 	background: lightgray;
 	width: 100px;
 	height: 150px;
 }
+.table_of_books {
+    display: block;
+    border: solid 1px  lightgray;
+	margin: 20px;
+	padding: 10px;
+	overflow-x:auto;
+}
+
 table {
-	border: solid 1px  lightgray;
+	border-collapse: collapse;
+  	width: 100%;
+}
+td { 
+	vertical-align: middle;
+}
+
+button {
+	cursor: pointer;
+  	-webkit-border-radius: 0;
+ 	-moz-border-radius: 0;
+ 	border-radius: 0px;
+ 	color: #ffffff;
+ 	font-size: 15px;
+ 	background: #3498db;
+ 	padding: 10px 20px 10px 20px;
+ 	text-decoration: none;
+ 	border: none;
+}
+
+button:hover {
+ 	background: #186a9e;
+ 	text-decoration: none;
+}
+
+#cancel_book, .del {
+	background: #bf3030;
+}
+#cancel_book:hover, .del:hover {
+	background: #7d1e1e;
+}
+.edit, .del {
+	color: #000;
+	background: none;
+	border: 1px solid lightgray;
+	width: 140px;
+}
+.edit:hover, .del:hover {
+	background: lightgray;
+}
+
+
+tr td:first-child {
+	width: 100px;
+}
+
+tr td:last-child {
+	width: 120px;
+}
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+tr td {
+	padding: 10px;
 }

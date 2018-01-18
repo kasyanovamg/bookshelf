@@ -3,69 +3,66 @@
 <head>
 	<title>Книжная полка</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<h1>Книжная полка</h1>
-	<button id="add_book">Добавить книгу</button>
+	<header>
+		<h1>Книжная полка</h1>
+		<button id="add_book">Добавить книгу</button>
+	</header>
 	<div id="edition_field">
 		<h3>Редактирование книги</h3>
 		<form>
-			<div>
-				<label for="name">Наименование</label>
-				<input type="text" id="book_name" placeholder="Название книги">
-			</div>
-			<div>
-				<label for="name">Автор</label>
-				<input type="text" id="book_name" placeholder="Автор книги">
-			</div>
-			<div>
-				<label for="name">Год выпуска</label>
-				<input type="text" id="book_name" placeholder="Год">
-			</div>
-			<div>
-				<label for="name">Изображение</label>
-				<input type="text" id="book_name" placeholder="Вставьте URL">
-			</div>
-			<button id="save_book">Сохранить</button>
-			<button id="cancel_book">Отменить</button>
+			<p>
+				<label for="book_name">Наименование</label>
+				<br>
+				<input type="text" id="book_name" name="book_name" placeholder="Название книги">
+			</p>
+			<p>
+				<label for="author_name">Автор</label>
+				<br>
+				<input type="text" id="author_name" name =="author_name" placeholder="Автор книги">
+			</p>
+			<p>
+				<label for="published">Год выпуска</label>
+				<br>
+				<input type="number" id="published" name="published" placeholder="Год" min="1900"  max="2018">
+			</p>
+			<p>
+				<label for="pic">Изображение</label>
+				<br>
+				<input type="text" id="pic" name="pic" placeholder="Вставьте URL">
+			</p>
+			<p>
+				<button id="save_book" type="submit" name="del_btn">Сохранить</button>
+				<button id="cancel_book" type="button" name="can_btn">Отменить</button>
+			</p>
 		</form>
 	</div>
+
 	<div class="table_of_books">
 		<table>
-			<tr>
-				<td class="book_image"></td>
-				<td>
-					JavaScript and Jquery
-					<br>
-					Author
-					<br>
-					Book
-				</td>
-				<td>
-					<button id="edit">Редактировать</button>
-					<br>
-					<button id="delete">Удалить</button>
-				</td>					
-			</tr>
+
 
 			<tr>
-				<td class="book_image"></td>
 				<td>
-					JavaScript and Jquery
-					<br>
-					Author
-					<br>
-					Book
+					<img class="image" src="http://www.rulit.me/data/programs/images/bolshaya-kniga-css3_435316.jpg"/>
 				</td>
 				<td>
-					<button id="edit">Редактировать</button>
-					<br>
-					<button id="delete">Удалить</button>
-				</td>					
+					<div class="title">JavaScript и Jquery</div>
+					<div id="author" class="book_author">Дэвид Сойер Макфарланд</div>
+					<div id="book_year" class="book_year">2017</div>
+				</td>
+				<td>
+					<p><button class="edit">Редактировать</button></p>
+					
+					<p><button class="del">Удалить</button></p>
+				</td>
 			</tr>
+
 
 		</table>
 	</div>
