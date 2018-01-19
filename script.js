@@ -26,6 +26,7 @@ $("#cancel_book").click(function() {
 	open_book_edit.hide(400);
 });
 
+//listens to when EDIT button is clicked and writes the data into edit field
 $("table").on('click', "#edit", function(){
 	editing = true;
     open_book_edit.show(400);
@@ -43,24 +44,29 @@ $("table").on('click', "#edit", function(){
 
 });
 
+
+//listens to the event of clicking on DELETE, removes the row
 $("table").on('click', "#del", function() {
 	$(this).closest("tr").fadeOut(400, function(){
 		$(this).remove();
 	});	
+	clear();
 });
 
+//adds the row to the table, it becomes the first row
 function add() {
 
 	table.prepend("<tr><td><img class=\"image\" src=\""+ book[3] +"\"/></td><td><div class=\"title\">" + book[0]+ "</div><div class=\"book_author\">" + book[1] + "</div><div><span class=\"book_year\">" + book [2]+ "</span><span class=\"year_format\"> г.</span></div></td><td><p><button id=\"edit\">Редактировать</button></p><p><button id=\"del\">Удалить</button></p></td></tr>");
 
 }
 
-$("#save_book").click(function(e){	
+//on submit event writes data into table cell or rewrites the data
+$("form").on("submit", function(e){	
 	e.preventDefault();
 	book = [];
 	book[0] = $("#book_name").val();
 	book[1] = $("#author_name").val();
-	book[2] = $("#published").val() ;
+	book[2] = $("#published").val();
 	book[3] = $("#pic").val();
 
 	if (!editing) {
