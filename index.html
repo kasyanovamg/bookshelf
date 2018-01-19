@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 	<header>
@@ -24,7 +24,7 @@
 			<p>
 				<label for="author_name">Автор</label>
 				<br>
-				<input type="text" id="author_name" name =="author_name" placeholder="Автор книги">
+				<input type="text" id="author_name" name="author_name" placeholder="Автор книги">
 			</p>
 			<p>
 				<label for="published">Год выпуска</label>
@@ -49,23 +49,27 @@
 
 			<tr>
 				<td>
-					<img class="image" src="http://www.rulit.me/data/programs/images/bolshaya-kniga-css3_435316.jpg"/>
+					<img class="image" src="http://www.rulit.me/data/programs/images/bolshaya-kniga-css3_435316.jpg" alt="book cover"/>
 				</td>
 				<td>
 					<div class="title">JavaScript и Jquery</div>
-					<div id="author" class="book_author">Дэвид Сойер Макфарланд</div>
-					<div id="book_year" class="book_year">2017</div>
+					<div class="book_author">Дэвид Сойер Макфарланд</div>
+					<div><span class="book_year">2017</span><span class="year_format"> г.</span></div>
 				</td>
 				<td>
-					<p><button class="edit">Редактировать</button></p>
+					<p><button id="edit">Редактировать</button></p>
 					
-					<p><button class="del">Удалить</button></p>
+					<p><button id="del">Удалить</button></p>
 				</td>
 			</tr>
 
 
 		</table>
 	</div>
+
+	<footer>
+		Mariia Kasianova
+	</footer>
 
 
 </body>
