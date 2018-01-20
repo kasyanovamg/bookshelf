@@ -1,25 +1,27 @@
 /* Animation of the header text */
 h1 {
 	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
 	text-shadow: 0px 2px 4px #fff;
 	overflow: hidden;
   	white-space: nowrap;
   	margin: 0 auto 20px auto; 
-  	letter-spacing: .15em; 
-  	animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  	letter-spacing: .05em; 
+  	animation: typing 2s steps(500, end), blink-caret .5s step-end infinite;
 }
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
-}
-header {
-	margin: 40px 0 0 20px;
 }
 body {
 	font-family: Arial, sans-serif;
 	padding: 20px;
  	background-color: #e1e1e1; 
 }
+header {
+	margin: 40px 0 0 20px;
+}
+
 .title {
 	font-size: 20px;
 	font-weight: bold;
